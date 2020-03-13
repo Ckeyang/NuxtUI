@@ -6,25 +6,27 @@
           <p>基础列表</p>
         </div>
         <!-- data border show-header stripe height max-height @click-column @click-row @click-header-->
-        <n-table
-          :data="tableData"
-          :border="true"
-          :stripe="true"
-          @click-column="onClickColumn"
-          @click-row="onClickRow"
-          @click-header="onClickHeader"
-        >
-          <n-table-column lable="第一列">
-            <template slot-scope="scope">{{ scope.row.a }} </template>
-          </n-table-column>
+        <n-table :data="tableData" :border="true" :stripe="true">
+          <n-table-column lable="第一列" prop="a"> </n-table-column>
           <n-table-column lable="第二列" prop="b"></n-table-column>
           <n-table-column lable="第三列" prop="c"></n-table-column>
           <template slot="footer">
-            footer
+            <span @click="isShow = true">show Dialog</span>
           </template>
         </n-table>
       </div>
     </div>
+    <n-dialog :visible.sync="isShow" width="30%" height="400px">
+      <template slot="title">新世纪哦发家史</template>
+      <n-table :data="tableData" :border="true" :stripe="true">
+        <n-table-column lable="第一列" prop="a"> </n-table-column>
+        <n-table-column lable="第二列" prop="b"></n-table-column>
+        <n-table-column lable="第三列" prop="c"></n-table-column>
+        <template slot="footer">
+          footer
+        </template>
+      </n-table>
+    </n-dialog>
   </div>
 </template>
 
@@ -34,6 +36,7 @@ import NIcon from "~/components/NIcon";
 import NTable from "~/components/NTable";
 import NTableColumn from "~/components/NTableColumn";
 import Logo from "~/components/Logo.vue";
+import NDialog from "~/components/NDialog";
 
 export default {
   components: {
@@ -41,7 +44,8 @@ export default {
     NButton,
     NTable,
     NTableColumn,
-    NIcon
+    NIcon,
+    NDialog
   },
   data() {
     return {
@@ -52,6 +56,7 @@ export default {
         { a: 2, b: 3, c: 4 },
         { a: 3, b: 4, c: 5 }
       ],
+      isShow: false,
       text: {
         value: null,
         disabled: null,

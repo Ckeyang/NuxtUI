@@ -18,7 +18,6 @@
 import NButton from './default/NButton'
 import NIcon from './default/NIcon'
 import NTable from './default/NTable'
-import NTableColumn from './default/NTableColumn'
 import NGrid from "./components/NGrid"
 import NFlex from "./components/NFlex"
 import NInput from "./components/NInput"
@@ -27,12 +26,13 @@ import NHeader from "./components/NHeader"
 import NAside from "./components/NAside"
 import NMain from "./components/NMain"
 import NFooter from "./components/NFooter"
+import NDialog from "./components/NDialog"
 
 const DefaultTheme = {
   NButton,
   NIcon,
   NTable,
-  NTableColumn,
+  NDialog,
   NGrid,
   NFlex,
   NInput,
@@ -47,7 +47,7 @@ export {
   NButton,
   NIcon,
   NTable,
-  NTableColumn,
+  NDialog,
   NGrid,
   NFlex,
   NInput,
