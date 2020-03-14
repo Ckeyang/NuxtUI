@@ -12,11 +12,9 @@ import NAside from "./components/NAside"
 import NMain from "./components/NMain"
 import NFooter from "./components/NFooter"
 import NTable from "./components/NTable"
-<<<<<<< HEAD
 import NTableColumn from "./components/NTableColumn"
-=======
 import NSelect from "./components/NSelect"
->>>>>>> 565e51d5fe670b0261076cb277d5f9f0ea9c4fdb
+import NDailog from "./components/NDailog"
 
 const components = {
   NButton,
@@ -30,11 +28,9 @@ const components = {
   NMain,
   NFooter,
   NTable,
-<<<<<<< HEAD
-  NTableColumn
-=======
-  NSelect
->>>>>>> 565e51d5fe670b0261076cb277d5f9f0ea9c4fdb
+  NTableColumn,
+  NSelect,
+  NDailog
 };
 
 /**
