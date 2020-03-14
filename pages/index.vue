@@ -65,44 +65,10 @@ export default {
       }
     };
   },
-  mounted() {
-    console.log(this.comId);
-  },
+  mounted() {},
   methods: {
-    onClickRow(data) {
-      console.log("row", data);
-    },
-    onClickHeader($event, data) {
-      console.log("header", $event, data);
-    },
-    onClickColumn(data) {
-      console.log("column", data);
-    },
-    testButton(data) {
-      console.log("button", data);
-    },
-    clearAAA() {
-      this.inputValue = "";
-    },
-    onChange(val) {
-      console.log("获取到改变后的值:", val, this.inputValue);
-    },
-    onInput(val) {
-      this.inputValue = val;
-      console.log("传出来的值：", val, "监听到的值", this.inputValue);
-      if (val == 1) {
-        this.newStatus = "success";
-      } else if (val == 2) {
-        this.newStatus = "warning";
-      } else if (val == 3) {
-        this.newStatus = "error";
-      } else {
-        this.newStatus = "";
-      }
-      console.log("获取正在输入的值:", val);
-    },
-    clickInput(e) {
-      // console.log(e);
+    newChange(val) {
+      console.log(val);
     }
   }
 };

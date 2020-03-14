@@ -11,7 +11,7 @@ let NDialog = {
     dialogCenter: "my-auto",
     titleClass: "flex justify-between py-2 px-4 border-b-2 border-gray-400",
     textSize: "text-base",
-    pointClass: "iconfont n-icon-guanbi text-base",
+    pointClass: "iconfont iconn-icon-guanbi text-base",
     containerClass: "p-4",
     containerOverflow: "auto",
     pointer: "cursor-pointer"
